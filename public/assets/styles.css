@@ -102,9 +102,18 @@ img {
   text-decoration: none;
 }
 
+.nav-links a.button.primary {
+  color: white;
+}
+
 .nav-links a:hover,
 .nav-links a[aria-current="page"] {
   color: var(--ink);
+}
+
+.nav-links a.button.primary:hover,
+.nav-links a.button.primary[aria-current="page"] {
+  color: white;
 }
 
 .button,
