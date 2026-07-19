@@ -11,14 +11,16 @@
   <meta property="og:image" content="https://pandaexpander.com/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <title>Panda Expander — Type less. Say it exactly right.</title>
-  <link rel="icon" href="/assets/icon.png">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260719-1">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/assets/favicon-v2.png">
+  <link rel="apple-touch-icon" href="/assets/icon.png">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260719-2">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav shell" aria-label="Main navigation">
       <a class="brand" href="/">
-        <img src="/assets/icon.png" alt="">
+        <img src="/assets/panda-mark.png" alt="">
         <span>Panda Expander</span>
       </a>
       <div class="nav-links">
@@ -46,7 +48,7 @@
 
       <div class="hero-stage" aria-label="Panda Expander form preview">
         <div class="icon-halo"></div>
-        <img class="app-icon" src="/assets/icon.png" alt="Panda holding an accordion filled with text">
+        <img class="app-icon" src="/assets/panda-mark.png" alt="Panda holding an accordion filled with text">
         <div class="expansion-card">
           <div class="expansion-title">
             <span>Friendly follow-up</span>
@@ -57,11 +59,16 @@
             Thanks for the conversation about <span class="field blue">the project</span>.
             I’ll <span class="field orange">send the revised plan tomorrow</span>.<span class="cursor"></span>
           </div>
+          <div class="field-controls" aria-hidden="true">
+            <span><i class="dot magenta"></i>Alex</span>
+            <span><i class="link-mark"></i>the project</span>
+            <span><i class="dot orange"></i>send the revised plan tomorrow</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section shell">
+    <section class="section features-section shell">
       <div class="section-header">
         <div>
           <div class="eyebrow">Built for real writing</div>
@@ -88,7 +95,7 @@
       </div>
     </section>
 
-    <section class="section shell">
+    <section class="section platforms-section shell">
       <div class="section-header">
         <div>
           <div class="eyebrow">Mac + mobile</div>
@@ -97,26 +104,74 @@
         <p>Create and refine snippets on either platform. The Mac app expands across desktop apps; the offline iOS keyboard brings the same library into your phone and iPad.</p>
       </div>
       <div class="platform-grid">
-        <article class="card">
-          <div class="symbol">M</div>
-          <h3>Native on Mac</h3>
-          <p>A fast resident app, menu-bar access, visual snippet composer, search, import, and automatic Sparkle updates.</p>
+        <article class="card platform-card">
+          <div class="platform-copy">
+            <div class="symbol">M</div>
+            <h3>Native on Mac</h3>
+            <p>A fast resident app, menu-bar access, visual snippet composer, search, import, and automatic Sparkle updates.</p>
+          </div>
+          <div class="device-scene mac-scene" aria-hidden="true">
+            <div class="mac-screen">
+              <div class="window-bar"><i></i><i></i><i></i></div>
+              <div class="mini-sidebar">
+                <b>Library</b><span></span><span></span><span></span>
+              </div>
+              <div class="mini-editor">
+                <strong>Client follow-up</strong>
+                <p>Hi <em>Alex</em>,</p>
+                <p>Thanks for the conversation about <em class="blue">the project</em>.</p>
+              </div>
+            </div>
+            <div class="mac-base"></div>
+          </div>
         </article>
-        <article class="card">
-          <div class="symbol">i</div>
-          <h3>A capable iOS keyboard</h3>
-          <p>Autocomplete, local snippet search, and a form deck that keeps the full typing keyboard available.</p>
+        <article class="card platform-card">
+          <div class="platform-copy">
+            <div class="symbol">i</div>
+            <h3>A capable iOS keyboard</h3>
+            <p>Autocomplete, local snippet search, and a form deck that keeps the full typing keyboard available.</p>
+          </div>
+          <div class="device-scene phone-scene" aria-hidden="true">
+            <div class="phone">
+              <div class="dynamic-island"></div>
+              <div class="phone-note">
+                <small>Friendly follow-up</small>
+                <p>Hi <em>Alex</em>,</p>
+                <p>Thanks for the conversation about <em class="blue">the project</em>.</p>
+              </div>
+              <div class="keyboard">
+                <div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <div class="symbol">☁</div>
-          <h3>Private iCloud sync</h3>
-          <p>Sync uses your private CloudKit database. The keyboard reads an offline snapshot and never needs Full Access.</p>
+        <article class="card platform-card">
+          <div class="platform-copy">
+            <div class="symbol">☁</div>
+            <h3>Private iCloud sync</h3>
+            <p>Sync uses your private CloudKit database. The keyboard reads an offline snapshot and never needs Full Access.</p>
+          </div>
+          <div class="device-scene tablet-scene" aria-hidden="true">
+            <div class="tablet">
+              <div class="mini-sidebar">
+                <b>Library</b><span></span><span></span><span></span>
+              </div>
+              <div class="mini-editor">
+                <strong>Client follow-up</strong>
+                <p>Hi <em>Alex</em>,</p>
+                <p>I’ll <em class="orange">send the revised plan tomorrow</em>.</p>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section compact shell">
       <div class="privacy-band">
+        <img class="privacy-panda" src="/assets/panda-mark.png" alt="">
         <div>
           <div class="eyebrow">Private by construction</div>
           <h2>Your words stay yours.</h2>
